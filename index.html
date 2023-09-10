@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500, 600, 400, 700&display-swap"
+      rel="stylesh eet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul class="header__menu">
+          <li><a href="#about" class="header__link">About</a></li>
+          <li><a href="#projects" class="header__link">Projects</a></li>
+          <li><a href="#contact" class="header__link">Contact</a></li>
+          <li class="header__line"></li>
+          <li>
+            <button id="toggle_btn" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a href="resume/Nag.pdf" target="_blank" class="header__resume btn"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <div class="mobile-view">
+      <nav>
+        <ul class="mobile-view__menu">
+          <li><a href="#about" class="mobile-view__link">About</a></li>
+          <li><a href="#projects" class="mobile-view__link">Projects</a></li>
+          <li><a href="#contact" class="mobile-view__link">Contact</a></li>
+          <li class="mobile-view__line"></li>
+          <li>
+            <button id="toggle_btn" class="mobile-view__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              href="resume/Nag.pdf"
+              target="_blank"
+              class="mobile-view__resume btn"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <section class="hero container">
+        <img src="/images/profile1.jpg" alt="profile pic" class="hero__img" />
+        <h2 class="hero__subtitle">Hello, I'm Nagendra 👋</h2>
+        <h1 class="hero__title">FRONT-END <br />WEB DEVELOPER.</h1>
+        <p class="hero__description">
+          A passionate <strong>Frontend</strong> web developer and enthusiast
+          specialized in building stunning pixel-perfect interactive
+          websites/applications.
+        </p>
+        <a
+          href="mailto:chnagendra594@gmail.com"
+          target="_blank"
+          class="hero__btn btn"
+          >Reach out</a
+        >
+      </section>
+      <section id="about" class="about container mar_above">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Strong in design and integration with intuitive
+            <strong>problem-solving skills</strong>. Proficient in C++,
+            Javascript. Passionate about implementing and launching new
+            projects. Ability to translate business requirements into technical
+            solutions. Looking to start the career.
+          </p>
+          <p class="about__description">
+            People who know me say I'm obsessed, that's fair, I am very driven
+            and love learning new things.
+          </p>
+          <p class="about__description">
+            I'm genuinely enthusiastic about
+            <strong>Software development and programming</strong>. While I have
+            a background in <a>Mechanical engineering</a>, my recent experiences
+            in coding and software projects have ignited a strong interest in
+            this field, and I'm eager to explore opportunities to further
+            develop my software-related skills and contribute to software-driven
+            innovations."
+          </p>
+          <h3 class="about__subtitle">
+            Here is a list of the technologies that I've worked with.
+          </h3>
+          <hr class="about__hr" />
+          <div class="about__flex_list">
+            <ul class="about__tech">
+              <li class="about__list">C++</li>
+              <li class="about__list">Data Structures</li>
+              <li class="about__list">Algorithms</li>
+              <li class="about__list">Amazon Web Services (AWS)</li>
+            </ul>
+            <ul class="about__tech">
+              <li class="about__list">HTML || CSS</li>
+              <li class="about__list">Javascript</li>
+              <li class="about__list">React JS</li>
+              <li class="about__list">Kubernetes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img__container">
+          <img
+            src="https://fakeimg.pl/500"
+            class="about__img lazy loading"
+            data-src="images/1674879245063_570_-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="projects" class="projects container mar_above">
+        <h3 class="projects__title">Some Things I've Built</h3>
+        <div class="projects__flex one">
+          <h3 class="projects__name">
+            Container Orchestration Using Kubernetes
+          </h3>
+          <div class="projects__img">
+            <img
+              src="https://fakeimg.pl/1280x720"
+              class="lazy loading"
+              data-src="images/k8s.jpg"
+              alt="demo1"
+            />
+          </div>
+          <div class="projects__hero">
+            <h3 class="projects__name-inner">
+              Container Orchestration Using Kubernetes
+            </h3>
+            <p class="projects__description">
+              Contributed to configuring Kubernetes for handling increased
+              traffic through scaling and load balancing features and also
+              utilized Istio service mesh to enhance the microservices
+              communication and observability
+            </p>
+            <a
+              href="https://github.com/Nagendra594/k8s.git"
+              target="_blank"
+              class="projects__icons btn"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+            <a
+              class="projects__icons btn"
+              href="https://github.com/Nagendra594/k8s.git"
+              target="_blank"
+            >
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projects__flex two">
+          <h3 class="projects__name">N-Queens Visualizer</h3>
+          <div class="projects__img">
+            <img
+              src="https://fakeimg.pl/1920x1080"
+              class="lazy loading"
+              data-src="images/n-queens.png"
+              alt="demo2"
+            />
+          </div>
+          <div class="projects__hero">
+            <h3 class="projects__name-inner">N-Queens Visualizer</h3>
+            <p class="projects__description">
+              The N-Queens puzzle is the problem of placing N chess queens on an
+              N×N chessboard so that no two queens threaten each other. Thus, a
+              solution requires that no two queens share the same row, column,
+              or diagonal
+            </p>
+            <p class="projects__description">
+              <strong>This algorithm is designed using recursion.</strong>
+            </p>
+            <a
+              href="https://github.com/Nagendra594/N-Queens-Visualizer.git"
+              target="_blank"
+              class="projects__icons btn"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+            <a
+              class="projects__icons btn"
+              href="https://n-queens-made-by-nagendra.netlify.app/"
+              target="_blank"
+            >
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projects__flex">
+          <h3 class="projects__name">Simple E-banking System</h3>
+          <div class="projects__img">
+            <img
+              src="https://fakeimg.pl/1920x1080"
+              class="lazy loading"
+              data-src="images/e-bank.png"
+              alt="demo3"
+            />
+          </div>
+          <div class="projects__hero">
+            <h3 class="projects__name-inner">Simple E-banking System</h3>
+            <p class="projects__description">
+              Built a project that shows the functionality of Banking - system
+              like Opening account, Balance enquiry, customers, Deposit and
+              withdrawal.
+            </p>
+            <p class="projects__description">
+              <strong> Implemented File-Handling for storage.</strong>
+            </p>
+            <a
+              href="https://github.com/Nagendra594/simple-E-banking.git"
+              target="_blank"
+              class="projects__icons btn"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+            <a
+              class="projects__icons btn"
+              href="https://github.com/Nagendra594/simple-E-banking.git"
+              target="_blank"
+            >
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container mar_above">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Whether you are starting a project, have business inquiries or just
+          want to say hi, my inbox is always open so feel free to reach out and
+          I will get back to you as soon as possible.
+        </p>
+        <a
+          href="mailto:chnagendra594@gmail.com"
+          target="_blank"
+          class="contact__btn btn"
+          >Reach Out</a
+        >
+      </section>
+    </main>
+    <footer class="footer">
+      <i>~ Chodavarapu Venkata Nagendra ~</i>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
