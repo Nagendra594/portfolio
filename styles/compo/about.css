@@ -13,6 +13,7 @@
 .about__title {
   font-size: var(--sz-2xl);
   color: var(--clr-light);
+  text-align: center;
 }
 .about__description {
   max-width: 60ch;
@@ -86,6 +87,7 @@
   }
   .about__title {
     font-size: var(--sz-4xl);
+    text-align: start;
   }
   .about__description {
     font-size: var(--sz-lg);
