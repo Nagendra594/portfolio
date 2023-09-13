@@ -14,7 +14,7 @@ const mobile = () => {
       isopen = true;
     }
     if (isopen) {
-      console.log(isopen);
+      // console.log(isopen);
       links.forEach((link) => {
         link.addEventListener("click", () => {
           mobile_view.style.display = "none";
